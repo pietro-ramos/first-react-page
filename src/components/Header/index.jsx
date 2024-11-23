@@ -4,12 +4,12 @@ import styles from './Header.module.css';
 const Header = () => {
     return (
         <header className={styles.header}>
-            <span>pietroRamos.dev</span>
+            <a href="/"><span>pietroRamos.dev</span></a>
             <nav>
-                <a href="#"> Home </a>
-                <a href="#"> Projects </a>
+                <a href="home"> Home </a>
+                <a href="projects"> Projects </a>
                 <a href="about"> About </a>
-                <a href="#"> Contact </a>
+                <a href="contact"> Contact </a>
             </nav>
         </header>
     );

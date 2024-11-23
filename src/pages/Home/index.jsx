@@ -16,13 +16,13 @@ const Home = () => {
                         <span><br />
                         Pietro Ramos
                         </span><br />
-                        Backend Devoloper<br /> & Data Scientist
+                        Backend Developer<br /> & Data Scientist
                     </p>
-                    <button className='btn btn-red'>
-                        <a href='github.com/pietro-ramos' target='_blank'>
-                        My GitHub
-                        </a>
-                    </button>
+                    <a href='/about'>
+                        <button className='btn btn-red'>
+                            Find out more
+                        </button>
+                    </a>
                     </div>
                     <figure>
                     <img className='img-home' src="/developer-red.svg" alt="Home Image" />
