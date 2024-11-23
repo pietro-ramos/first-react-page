@@ -2,6 +2,7 @@ import { React } from "react";
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import styles  from "./Home.module.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
@@ -18,11 +19,9 @@ const Home = () => {
                         </span><br />
                         Backend Developer<br /> & Data Scientist
                     </p>
-                    <a href='/about'>
-                        <button className='btn btn-red'>
+                        <Link to="/about" className='btn btn-red'>
                             Find out more
-                        </button>
-                    </a>
+                        </Link>
                     </div>
                     <figure>
                     <img className='img-home' src="/developer-red.svg" alt="Home Image" />
