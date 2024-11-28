@@ -1,11 +1,12 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import Container from "../../components/Container";
 
 const Contact = () => {
     return (
         <>
             <Header />
-            <div>
+            <Container>
                 <h1>Contact</h1>
                 <p>Send me a message!</p>
                 <a href='https://github.com/pietro-ramos' target='_blank' rel='noopener noreferrer'>
@@ -18,7 +19,7 @@ const Contact = () => {
                             My LinkedIn
                         </button>
                 </a>
-            </div>
+            </Container>
             <Footer />
         </>
     );
