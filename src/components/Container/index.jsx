@@ -1,6 +1,6 @@
-import { React } from "react";
 import styles from "./Container.module.css";
 
+// eslint-disable-next-line react/prop-types
 const Container = ({ children }) => {
     return (
         <section className={styles.container}>
@@ -8,3 +8,5 @@ const Container = ({ children }) => {
         </section>
     );
 }
+
+export default Container;
