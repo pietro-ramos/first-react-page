@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
@@ -7,7 +7,7 @@ import Page404 from './pages/Page404';
 
 const AppRoutes = () => {
     return (
-        <HashRouter>
+        <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/home" element={<Home />} />
@@ -16,8 +16,8 @@ const AppRoutes = () => {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<Page404 />} />
             </Routes>
-        </HashRouter>
+        </BrowserRouter>
     );
 }
 
-export default AppRoutes
+export default AppRoutes;
