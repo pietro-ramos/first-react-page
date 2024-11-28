@@ -4,17 +4,20 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Page404 from './pages/Page404';
+import Template from './pages/Template';
 
 const AppRoutes = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/home" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="*" element={<Page404 />} />
+                <Route path='/' element={<Template />}>
+                    <Route index element={<Home />} />
+                    <Route path='home' element={<Home />} />
+                    <Route path='about' element={<About />} />
+                    <Route path='projects' element={<Projects />} />
+                    <Route path='contact' element={<Contact />} />
+                    <Route path='*' element={<Page404 />} />
+                </Route>
             </Routes>
         </BrowserRouter>
     );
