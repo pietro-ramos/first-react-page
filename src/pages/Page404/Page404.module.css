@@ -9,13 +9,12 @@
     flex-direction: column;
 }
 
-.large_text {
+.large_text, .red_text {
     font-size: 300px;
     color: var(--red);
     font-weight: bold;
 }
 
-.red_text {
+.red_text{
     font-size: 1.5rem;
-    color: var(--red);
 }
